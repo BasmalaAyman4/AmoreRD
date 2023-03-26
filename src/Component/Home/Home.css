@@ -1,0 +1,79 @@
+.sliderImg{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.home__body{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.home__title{
+        font-family: RobotoBlack;
+        font-size: 35px;
+        font-weight: bold;
+        margin: auto;
+        text-align: center;
+        width: 70%;
+}
+.feature__para{
+    text-align: center;
+    font-size: 27px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.featuredProducts{
+    margin-bottom: 120px;
+}
+.prodSwiper__body {
+text-align: center;
+margin-top: 15px;
+}
+.prodSwiper__title{
+    font-weight: bold;
+}
+.prodSwiper__para{
+    color: #777;
+    font-size: 20px;
+}
+.prod__body{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 10%;
+}
+.swiperImg{
+    width: 100%;
+}
+.uplifts__title {
+    font-weight: bold;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.upliftsImg,
+.footerImg{
+    display: flex;
+        margin: auto;
+        max-height: 400px;
+        max-width: 600px;
+        width: 100%;
+}
+.uplifts{
+    margin-bottom: 50px;
+}
+@media (max-width:767px) {
+    .home__title{
+        width: 100%;
+        font-size: 20px;
+    }
+        .prod__body{
+            display: grid;
+            grid-template-columns: repeat(2,auto);
+            gap: 5%;
+        }
+}
+@media (min-width:768px) and (max-width:991px) {
+    .home__title {
+            width: 100%;
+            font-size: 20px;
+        }
+    
+}

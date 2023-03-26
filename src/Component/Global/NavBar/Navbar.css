@@ -1,0 +1,177 @@
+.nav{
+    border-bottom: 0.5px solid #d6d6d6;
+        box-shadow: 2px 0 12px 0 rgb(0 0 0 / 15%);
+}
+.nav{
+    position: fixed !important;
+    width: 100%;
+    background-color: var(--main-background-color);
+    color: var(--text-color);
+    z-index: 999;
+    letter-spacing: 2px;
+}
+.nav-link{
+    color: var(--text-color) !important;
+}
+/* The switch - the box around the slider */
+.switch {
+    --width-of-switch: 3em;
+    --height-of-switch: 1.5em;
+    /* size of sliding icon -- sun and moon */
+    --size-of-icon: 1.4em;
+    /* it is like a inline-padding of switch */
+    --slider-offset: 0.3em;
+    position: relative;
+    width: var(--width-of-switch);
+    height: var(--height-of-switch);
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f4f4f5;
+    transition: .4s;
+    border-radius: 30px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: var(--size-of-icon, 1.4em);
+    width: var(--size-of-icon, 1.4em);
+    border-radius: 20px;
+    left: var(--slider-offset, 0.3em);
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
+    transition: .4s;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+input:checked+.slider {
+    background-color: #303136;
+}
+
+input:checked+.slider:before {
+    left: calc(100% - (var(--size-of-icon, 1.4em) + var(--slider-offset, 0.3em)));
+    background: #303136;
+    /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
+    box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+}
+.logo{
+    display: flex;
+}
+.logoImg{
+    width: 5%;
+    margin: auto;
+    margin-top: 70px;
+}
+.shopCart{
+    margin-left: 30px;
+    font-size: 25px;
+    color: #777;
+}
+.login{
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: RobotoLight;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 2px;
+}
+.login:hover{
+    color: var(--text-color);
+}
+.modal-content {
+width: 20% !important;
+   float: right;
+}
+.shop-cart__link{
+margin-left: 60px;
+text-decoration: none;
+color: var(--text-color);
+font-size: 25px;
+}
+.shop-cart-product{
+    margin-top: 50px;
+}
+.shop-cart-product__img{
+    width: 25%;
+}
+.shop-cart-product{
+    display: flex;
+    gap: 10%;
+    align-items: center;
+}
+.shop-cart-product__title{
+    font-weight: bold;
+}
+.shop-cart-product__para{
+        font-size: 14px;
+}
+
+.del{
+    font-size: 24px;
+    display: none;
+}
+.shop-cart-product:hover .del{
+    display: block;
+}
+.subTotal{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.check-out__link{
+text-decoration: none;
+background-color: var(--text-color);
+color: var(--main-background-color);
+padding: 10px 40px;
+letter-spacing: 2px;
+margin-left: 20px;
+
+}
+.shopCart{
+    color: var(--text-color);
+}
+.navbar-toggler-icon {
+    background-color: #ffffff29;
+}
+@media (min-width: 576px) and (max-width:992px) {
+.navbar-expand-sm .navbar-toggler {
+        display: block !important;
+    }
+        .navbar-expand-sm .offcanvas{
+            display: none !important;
+        }
+}
+@media (max-width:767px) {
+    .modal-content {
+            width: 100% !important;
+            float: right;
+        }
+                .check-out__link{
+                    margin-left: 70px;
+                }
+    
+}
+.btn-close{
+    color: var(--main-background-color) !important;
+}
